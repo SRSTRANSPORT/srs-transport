@@ -3,12 +3,13 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const { Resend } = require("resend");
-
 const app = express();
+
 app.use(
   cors({
-    origin: ["https://srstransport1.netlify.app/"], 
+    origin: ["https://srstransport1.netlify.app"],
     methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"]
   })
 );
 
