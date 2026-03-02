@@ -1,13 +1,13 @@
 {
-  "name": "srs1",
+  "name": "srs2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "SRS Transport Backend",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Thanmay",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
