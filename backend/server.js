@@ -57,7 +57,7 @@ app.post("/send-quote", async (req, res) => {
 
     await resend.emails.send({
       from: "SRS Transport <onboarding@resend.dev>",
-      to: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER.split(","),
       reply_to: email,
       subject: `New Quote - ${name}`,
       headers: {
